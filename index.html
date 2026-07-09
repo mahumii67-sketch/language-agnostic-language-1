@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language-Agnostic Chatbot</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <h1>Language-Agnostic Chatbot</h1>
+      <p>Type a message in any language and the chatbot will reply in the same language.</p>
+    </header>
+
+    <main class="chat-container">
+      <div id="chat-log" class="chat-log" aria-live="polite"></div>
+      <div class="chat-input-row">
+        <button id="mic-button" class="icon-button" title="Use voice input">🎤</button>
+        <input id="chat-input" type="text" placeholder="Write your message here..." autocomplete="off" />
+        <button id="send-button" class="send-button">Send</button>
+      </div>
+      <div id="status" class="status-text">Ready to chat.</div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
